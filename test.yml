@@ -1,0 +1,10 @@
+---
+- name: test
+  hosts: all
+  vars:
+    - var1: var1
+    - var2: var2
+  tasks:
+    - name: echo vars
+      debug:
+        msg: {{ var1 }}
