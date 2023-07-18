@@ -1,0 +1,30 @@
+- name: day5 debug test01
+  hosts: web01
+  tasks:
+    - name: Get uptime information
+      ansible.builtin.shell: /usr/bin/uptime
+      register: result
+
+    - name: debug
+      debug:
+        msg: "{{ result }}"
+
+    - name: debug1
+      debug:
+        msg: "{{ result }}"
+        verbosity: 1
+
+    - name: debug2
+      debug:
+        msg: "{{ result }}"
+        verbosity: 2
+
+    - name: debug3
+      debug:
+        msg: "{{ result }}"
+        verbosity: 3
+
+    - name: debug4
+      debug:
+        msg: "{{ result }}"
+        verbosity: 4
