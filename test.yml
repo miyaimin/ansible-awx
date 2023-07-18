@@ -8,6 +8,6 @@
     - name: echo vars
       debug:
         msg: "{{ item }}"
-      with_item:
+      with_items:
         - var1
         - var2
