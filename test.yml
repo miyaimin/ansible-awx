@@ -7,4 +7,7 @@
   tasks:
     - name: echo vars
       debug:
-        msg: var1
+        msg: "{{ item }}"
+      with_item:
+        - var1
+        - var2
