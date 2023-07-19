@@ -2,8 +2,8 @@
 - name: test
   hosts: all
   vars:
-    - var1: var1test
-    - var2: var2test
+    - var1: var1testaaa
+    - var2: var2testaaa
   tasks:
     - name: echo vars
       debug:
